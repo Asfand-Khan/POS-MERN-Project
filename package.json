@@ -1,0 +1,19 @@
+{
+  "name": "pos-mern-project",
+  "version": "1.0.0",
+  "description": "this is a fullstack MERN POS project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asfand-Khan/POS-MERN-Project.git"
+  },
+  "author": "Asfand Ali Khan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Asfand-Khan/POS-MERN-Project/issues"
+  },
+  "homepage": "https://github.com/Asfand-Khan/POS-MERN-Project#readme"
+}
