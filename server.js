@@ -16,3 +16,8 @@ app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(morgan("dev"));
+
+const PORT = 3000 || process.env.PORT;
+app.listen(PORT,()=>{
+    console.log(`App is running on PORT ${PORT}`);
+})
