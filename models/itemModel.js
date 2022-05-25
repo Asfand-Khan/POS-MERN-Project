@@ -16,12 +16,11 @@ const itemSchema = mongoose.Schema(
     },
     image: {
       required: true,
-      type,
-      String,
+      type: String,
     },
   },
   { timestamp: true }
 );
 
-const Items = mongoose.Model("Items", itemSchema);
+const Items = mongoose.model("Items", itemSchema);
 module.exports = Items;
