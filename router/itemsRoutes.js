@@ -4,7 +4,9 @@ const router = express.Router();
 
 //router
 //method - get
-router.get("get-items", getAllItems);
+router.get("/get-items", getAllItems);
 
 //method - post
-router.post("add-item", addItem);
+router.post("/add-item", addItem);
+
+module.exports = router;
