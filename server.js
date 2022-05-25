@@ -3,12 +3,16 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const cors = require('cors');
 const dotenv = require('dotenv');
+const connectDb = require('./config/conn');
 
 // rest variable
 const app = express();
 
 // config dotenv
 dotenv.config();
+
+// db config
+connectDb();
 
 // middlewares
 app.use(cors());
