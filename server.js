@@ -4,7 +4,7 @@ const morgan = require('morgan');
 const cors = require('cors');
 const dotenv = require('dotenv');
 
-// initializing express
+// rest variable
 const app = express();
 
 // config dotenv
@@ -17,7 +17,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(morgan("dev"));
 
+//PORT
 const PORT = 3000 || process.env.PORT;
+
+//listen
 app.listen(PORT,()=>{
     console.log(`App is running on PORT ${PORT}`);
 })
