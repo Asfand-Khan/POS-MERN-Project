@@ -10,6 +10,9 @@ const getAllItems = async (req, res) => {
     console.log(error);
   }
 };
-const addItem = () => {};
+const addItem = async (req, res) => {
+  const newItem = await ItemModel(req.body);
+  await newItem.save();
+};
 
 module.exports = { getAllItems, addItem };
